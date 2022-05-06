@@ -1,7 +1,7 @@
 # functions go here
 
 # checks input is a number more than zero
-from tkinter.tix import Meter
+
 
 
 def num_check (question):
@@ -45,19 +45,19 @@ while keep_going == "":
     # call your number checker function three times to get the 
     # width, length and cost_per_m of the fencing
     width = num_check ("width:")
-    height = num_check ("height:")
+    length = num_check ("length:")
     cost_per_meter = num_check ("cost per meter:")
 
 
     # Calulate perimeter (width + height) x 2
-    perimeter = width + height * 2 
+    perimeter = width + length * 2 
     
     # Calculate the cost of the fencing (perimeter x price / meter)
     cost_of_fencing = perimeter * cost_per_meter
 
     # Output the perimeter and cost of the fencing
-    print("perimeter: units ".format(perimeter))
-    print("cost per meter: units".format(cost_per_meter))
+    print("perimeter: {} units ".format(perimeter))
+    print("cost per meter: {} units".format(cost_per_meter))
 
     keep_going = input("Press <enter> to keep going or any key to quit")
     
